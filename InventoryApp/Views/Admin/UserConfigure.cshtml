@@ -1,0 +1,65 @@
+<h1 class="header">User Configuration</h1>
+
+<table class="user-info">
+    <tr>
+        <td class="label">UserName:</td>
+        <td>@Model.Username</td>
+    </tr>
+    <tr>
+        <td class="label">Roles:</td>
+        <td>@string.Join(", ", Model.Roles)</td>
+    </tr>
+</table>
+
+<br>
+<div class="buttons">
+    <a class="btn btn-blue" asp-action="EditUserName" asp-controller="Admin">Edit UserName</a>
+    <a class="btn btn-green" asp-action="EditRoles" asp-controller="Admin">Edit Roles</a>
+    <br>
+    <a class="btn btn-orange" asp-action="EditPassword" asp-controller="Admin">Edit Password</a>
+    <a class="btn btn-danger" asp-action="Delete User" asp-controller="Admin">Delete User</a>
+    <br>
+    <a class="btn btn-secondary" asp-action="UserList" asp-controller="Admin">Back to User List</a>
+</div>
+
+<style>
+    .header {
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .user-info {
+        margin: auto;
+        font-family: Arial;
+        font-size: medium;
+    }
+
+    .user-info td {
+        padding: 10px 20px;
+    }
+
+    .buttons {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .btn-blue {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .btn-green {
+        background-color: #28a745;
+        color: white;
+    }
+
+    .btn-orange {
+        background-color: #fd7e14;
+        color: white;
+    }   
+
+    a{
+        margin-top: 15px;
+    }
+</style>

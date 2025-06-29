@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    @if (!User.Identity!.IsAuthenticated)
+    {
+        <a class="btn btn-primary" asp-controller="Account" asp-action="Login">Login</a>
+        <a class="btn btn-secondary" asp-controller="Account" asp-action="Register">Register</a>
+    }
+    else
+    {
+        <h1 class="header">Welcome, @User.Identity.Name!</h1>
+        @if(User.IsInRole("Admin")){
+            <p>You have admin access.</p>
+            <a class="btn btn-success" asp-controller="Admin" asp-action="Index">Admin Dashboard</a>
+            <br>
+        }
+        <form asp-controller="Account" asp-action="Logout" method="post">
+            <button type="submit" class="btn btn-danger">Logout</button>
+        </form>
+    }
+
+</div>
+
+<style>
+    .header{
+        font-family: arial;
+        font-weight: bold;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 250px;   
+        gap: 20px;   
+    }
+</style>

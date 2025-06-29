@@ -1,0 +1,13 @@
+@model EditUsernameViewModel
+
+<h2>Edit Username</h2>
+
+<form asp-action="EditUsername" method="post">
+    <div class="form-group">
+        <label asp-for="NewUsername"></label>
+        <input asp-for="NewUsername" class="form-control" />
+        <span asp-validation-for="NewUsername" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Update Username</button>
+
+</form>
