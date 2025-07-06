@@ -37,6 +37,29 @@ This is a basic inventory management system built using **ASP.NET Core MVC** and
 
 ---
 
+## 📸 Screenshots
+
+### Login
+| Register/Login | Login Page | Alternative Login |
+|----------------|------------|-------------------|
+| ![Register Login Page](InventoryApp/assets/screenshots/register-login-page.png) | ![Login Page](InventoryApp/assets/screenshots/login-page.png) | ![Login Page 2](InventoryApp/assets/screenshots/login-page-2.png) |
+
+### Product Management
+| Create Page | Edit Page | Admin Product List | User Product List |
+|-------------|-----------|-------------------|-------------------|
+| ![Create Page](InventoryApp/assets/screenshots/create-page.png) | ![Edit Page](InventoryApp/assets/screenshots/edit-page.png) | ![Admin Product List](InventoryApp/assets/screenshots/admin-product-list.png) | ![User Product List](InventoryApp/assets/screenshots/user-product-list.png) |
+
+### Notification System
+| Create Notification | Edit Notification | Delete Notification |
+|---------------------|-------------------|---------------------|
+| ![Create Notification](InventoryApp/assets/screenshots/create-notification.png) | ![Edit Notification](InventoryApp/assets/screenshots/edit-notification.png) | ![Delete Notification](InventoryApp/assets/screenshots/delete-notification.png) |
+
+### Admin Dashboard
+| Admin Dashboard | Admin Home | Admin User List |
+|----------------|------------|-----------------|
+| ![Admin Dashboard](InventoryApp/assets/screenshots/admin-dashboard.png) | ![Admin Home Page](InventoryApp/assets/screenshots/admin-home-page.png) | ![Admin User List](InventoryApp/assets/screenshots/admin-user-list.png) |
+
+
 ## ⚙️ Getting Started
 
 1. Clone the repo:
