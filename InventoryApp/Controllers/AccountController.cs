@@ -56,13 +56,13 @@ public class AccountController : Controller
 
     public IActionResult AccessDenied() => View();
 
-    [HttpGet]
+    /* [HttpGet]
     public async Task<IActionResult> Profile()
     {
         // make a page to manage current profile
         // edit username/password/delete profile
         //then make them all for admin
-    }
+    } */
 
     [HttpGet]
     public async Task<IActionResult> EditUsername()

@@ -30,6 +30,8 @@ public class ProductService
 
     public async Task EditProduct(Product product)
     {
+        product.UserId = userId ?? "Anonymous";
+
         _context.Products.Update(product);
         await _context.SaveChangesAsync();
     }
